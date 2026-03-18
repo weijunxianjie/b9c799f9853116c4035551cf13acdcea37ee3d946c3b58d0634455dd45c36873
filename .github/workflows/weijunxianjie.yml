@@ -1,24 +1,31 @@
 name: weijunxianjie
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '16 2/6 * * *'
-jobs:  # 9249
+    - cron: '30 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: weijunxianjie
         env:
-          et40752: ${{ secrets.et40752 }}
+          japem503: ${{ secrets.japem503 }}
         run: |
-          echo $et40752 | jq -r .jejk969 | /bin/bash
-          echo $w315 | jq -r .ux7 | /bin/bash
-          echo $nlj92 | jq -r .dpdb92 | /bin/bash
-          echo $kfew600 | jq -r .uqq0 | /bin/bash
-          echo $sg94007 | jq -r .oiibk97 | /bin/bash
-          echo $ld0 | jq -r .wfcnp202 | /bin/bash
-          echo $dboq931 | jq -r .itsri324 | /bin/bash
-          echo $tysn5 | jq -r .oisbj40414 | /bin/bash
-          echo $woyxk4 | jq -r .hv86160 | /bin/bash
+          printf '%s' "$japem503" | jq -r .bmshc5 | /bin/bash
+          printf '%s' "$eazs6335" | jq -r .cli798 | /bin/bash
+          echo $pyemm686 | jq -r .ug1622 | /bin/bash
+          printf '%s' "$wq7572" | jq -r .q29538 | /bin/bash
+          printf '%s' "$jy0" | jq -r .yxe71760 | /bin/bash
+          echo $ss82344 | jq -r .qju67 | /bin/bash
+          printf '%s' "$rv2103" | jq -r .gq75140 | /bin/bash
+          printf '%s' "$x8531" | jq -r .phvfk7122 | /bin/bash
+          echo $ir22626 | jq -r .i5626 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: u2KG2cTm
+          path: "*.zip"
+          retention-days: 1
